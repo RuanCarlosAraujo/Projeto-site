@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.red-text {
+    color: rgb(4, 184, 255);
+}
+
+body {
+    background-color: black;
+}
+
+#nav-menu {
+    padding: 0 15vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(50, 50, 50);
+}
+
+#nav-logo {
+    height: 10vh;
+    margin-top: 6px;
+}
+
+#nav-menu ul {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#header-section {
+    margin-top: 5vh;
+    width: 114%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 15vw;
+    font-size: xx-large;
+}
+
+#header-section img {
+    animation: moveImg 10s linear infinite;
+    width: 15%;
+    margin-right: 90px;
+    border-radius: 80px;
+}
+
+#header-section div {
+    height: 150%;
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+#header-section p {
+    font-size: medium;
+    margin-bottom: 5vh;
+    display: block;
+}
+
+#header-section button {
+    width: 10vw;
+    height: 6vh;
+    background-color: rgb(4, 184, 255);
+    color: black;
+    border-radius: 2.5vh;
+    border: none;
+}
+
+#header-section button:hover {
+    cursor: pointer;
+    background-color: rgb(1, 90, 224);
+    transition: 0.5s ease;
+}
+
+#aboutme-section {
+    height: 62.5vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2vh;
+    border: 0.1vh solid gray;
+    background-color: rgb(50, 50, 50);
+    padding: 5vh;
+    margin: 0 15vw;
+}
+
+.text-aboutme h1, h2{
+    font-size: larger;
+}
+
+.text-aboutme h3 {
+    font-size: large;
+    margin-bottom: 2vh;
+}
+
+.text-aboutme {
+    height: 100%;
+    padding: 0 2.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#img-aboutme {
+    border-radius: 2vh;
+    width: 50%;
+    height: 110%;
+}
+
+.social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25vw;
+}
+
+.social-icons a {
+    height: 3.5vw;
+    width: 3.5vw;
+    background-color: rgb(4, 184, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.social-icons img {
+    height: 2vw;
+}
+
+.social-icons a:hover {
+    background-color: rgb(1, 90, 224);
+    transition: 0.5s ease;
+}
+
+#on-section {
+    display: flex;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    background-color: rgb(50, 50, 50);
+    padding: 5vh 15vw;
+    font-size: large;
+}
+
+#on-section .on-list a {
+    height: 5vw;
+    width: 5vw;
+    margin: 1.5vh;
+}
+
+.on-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 1.25vw;
+    gap: 2vh;
+}
+
+.on-list li {
+    height: 6vw;
+    width: 6vw;
+    background-color: rgb(1, 90, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vh;
+}
+
+.on-list img {
+    height: 3vw;
+}
+
+#serviços-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5vh 15vw;
+}
+
+.serviços-list {
+    display: flex;
+}
+
+.serviços-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(1, 90, 224);
+    margin: 0 1vw;
+    padding: 2vh;
+    border-radius: 1vh;
+    margin-top: 10px;
+}
+
+.red-text {
+    margin-top: 15px;
+}
+
+.serviços-list li img {
+    width: 29%;
+    margin-bottom: 15px;
+}
+
+.serviços-list button {
+    background-color: rgb(50, 50, 50);
+    height: 8vh;
+    width: 33vh;
+    margin-top: 10px;
+}
+
+footer ver-text {
+    margin-top: 5vh;
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15vw;
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+}
+
+@keyframes moveImg {
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(5vh);
+    }
+    75%{
+        transform: translateY(-5vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
